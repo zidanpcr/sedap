@@ -15,6 +15,7 @@ const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
 const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"));
 const GuestLayout = React.lazy(() => import("./layouts/GuestLayout"));
 const Products = React.lazy(() => import("./pages/Products"));
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
 
 // Lazy load pages
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
@@ -52,6 +53,8 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="products" element={<Products />} />
+           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route element={<MainLayout />}></Route>
         </Route>
 
         {/* Auth layout routes */}
