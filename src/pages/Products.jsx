@@ -50,6 +50,8 @@ export default function Products() {
         className="mb-4 p-3 w-full bg-white rounded-2xl shadow-lg"
       />
 
+
+
       <table className="min-w-full divide-y divide-gray-200 overflow-hidden rounded-2xl shadow-lg">
         <thead>
           <tr className="bg-emerald-600 text-white text-left text-sm font-semibold">
